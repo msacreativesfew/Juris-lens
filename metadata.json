@@ -1,0 +1,6 @@
+{
+  "name": "JurisLens",
+  "description": "Visual regulatory compliance intelligence workspace for JAPAC cross-border retail and commerce, powered by multimodal Gemini and verified statutory retrieval.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

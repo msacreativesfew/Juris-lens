@@ -1,0 +1,74 @@
+@import "tailwindcss";
+
+:root {
+  color-scheme: light;
+  --jl-page: #F7F5EE;
+  --jl-surface: #FFFEFA;
+  --jl-surface-soft: #F1EEE4;
+  --jl-surface-sand: #E9E2D3;
+  --jl-border: #DFDACD;
+  --jl-border-strong: #C9C2B3;
+  --jl-text: #26352D;
+  --jl-text-secondary: #68736A;
+  --jl-text-muted: #858A80;
+  --jl-leaf: #477A58;
+  --jl-leaf-hover: #386849;
+  --jl-leaf-soft: #E5EFE5;
+  --jl-sage: #A8BDA5;
+  --jl-rose: #B86F78;
+  --jl-rose-soft: #F5E7E7;
+  --jl-terracotta: #B86A50;
+  --jl-success: #28734A;
+  --jl-success-bg: #E5F3E8;
+  --jl-review: #8A6417;
+  --jl-review-bg: #FBF0D2;
+  --jl-risk: #B53D4A;
+  --jl-risk-bg: #F8E6E8;
+  --jl-info: #346C92;
+  --jl-info-bg: #E7F0F7;
+  --jl-focus: #2F7651;
+  --jl-radius-control: 8px;
+  --jl-radius-card: 12px;
+  --jl-radius-panel: 16px;
+}
+
+body {
+  background-color: var(--jl-page);
+  color: var(--jl-text);
+  font-family: Inter, Geist, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+}
+
+:focus-visible {
+  outline: 2px solid var(--jl-focus);
+  outline-offset: 2px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    scroll-behavior: auto !important;
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+/* JurisLens custom subtle warm scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--jl-surface-soft);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--jl-border-strong);
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--jl-leaf);
+}
